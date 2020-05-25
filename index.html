@@ -1,0 +1,15 @@
+﻿<head>
+    <meta charset="utf-8" />
+
+    <link href="/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app-content/app.css" rel="stylesheet" />
+</head>
+
+<h1 class= "col-md-6;" style="font-family: 'Franklin Gothic Medium';
+     color: blue;
+     text-align: center;">
+     Bem vindo, {{vm.user.name}}!!
+</h1>
+
+<div class="flash-message" ng-if="flash">
+    <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
